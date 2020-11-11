@@ -37,7 +37,7 @@ int main()
 	std::cout << std::endl << "and the average of those numbers is " << (float)rangeSum / (float)rangeLength << std::endl << std::endl; 
 	
 	std::cout << std::setfill('*') << std::setw(boxWidth) << "" << std::endl;
-	for (int i = 0; i <= boxHeight -2; i++) {
+	for (int i = 0; i < boxHeight -2; i++) {
 		std::cout << std::setw(boxWidth - 2) << std::left << std::setfill(' ') << "*" << std::internal << " " << std::right << "*" << std::endl;
 	}
 	std::cout << std::setfill('*') << std::setw(boxWidth) << "" << std::endl << std::endl;
