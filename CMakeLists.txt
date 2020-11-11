@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(main)
+project(loopFun)
 
-add_executable(main main.cpp)
+add_executable(loopFun loopFun.cpp)
 
-install(TARGETS main)
+install(TARGETS loopFun)
 
 enable_testing()
-add_test(NAME main COMMAND main)
+add_test(NAME loopFun COMMAND loopFun)
 
 
 IF (WIN32 AND CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-	target_link_libraries(main -static)
+	target_link_libraries(loopFun -static)
 ENDIF()
